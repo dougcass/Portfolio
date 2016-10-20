@@ -1,5 +1,5 @@
 
-// base framework
+// // base framework
 import $ from 'jquery';
 
 // legacy loading for bootstrap javascript
@@ -8,28 +8,52 @@ require('bootstrap');
 
 // import our styles
 import './stylesheets/base.scss';
-import _ from 'underscore';
 
+//import multimediaController from '.pages/multimedia';
 // on document load
 $(function(){
-
+  //Kick off the app
   console.log('%c App Started', 'color:green');
 
-  // add some html content
-  $('#root').html('<button class="btn btn-default" type="submit">Button</button>');
+  // set default template settings
+ 
 
-  // use a template
-  _.templateSettings = {
-    evaluate:    /{{([\s\S]+?)}}/g,
-    interpolate: /{{-([\s\S]+?)}}/g,
-    escape:      /{{=([\s\S]+?)}}/g
-  };
+  // launch navbar
+  // navbar.init();
 
-  var template = '<button class="btn btn-default" type="submit">{{= name}}</button>';
-  var compiledTemplate = _.template(template);
-  $('#root').html(compiledTemplate({name: '<fruit>'}));
 
-  // optionally animate that content
-  $('#root button').animate({fontSize: 50}, 1000);
+// Router; Which page are we on???
+/*switch(window.location.pathname){
+case '/pages/todo.html':
+  todoController.init();
+  break;
+case '/pages/bb_todo.html':
+  new bbTodoController();
+  break;
+case '/pages/multimedia.html':
+  console.log('multimedia page started');
+  break;
+case '/pages/svg_example.html':
+  svgController.init();
+  break;
+case '/pages/three.html':
+  threeController.init();
+  break;
+case '/pages/resume.html':
+  resumeController.init();
+  break;
 
+}
+*/
+
+
+
+console.log('====================================');
+console.log('Yo! Hire Me!! casserleighd@gmail.com');
+console.log('====================================');
+
+
+
+
+// todo.init(); ??
 });
