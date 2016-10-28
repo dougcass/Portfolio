@@ -48,9 +48,9 @@ case '/pages/resume.html':
 
 
 
-console.log('====================================');
-console.log('Yo! Hire Me!! casserleighd@gmail.com');
-console.log('====================================');
+  console.log('====================================');
+  console.log('Yo! Hire Me!! casserleighd@gmail.com');
+  console.log('====================================');
 
 
 
