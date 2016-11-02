@@ -8,12 +8,16 @@ require('bootstrap');
 
 // import our styles
 import './stylesheets/base.scss';
+import homeController from './pages/main';
+
 
 //import multimediaController from '.pages/multimedia';
 // on document load
 $(function(){
   //Kick off the app
-  console.log('%c App Started', 'color:green');
+  homeController.init();
+
+});
 
   // set default template settings
  
@@ -23,10 +27,20 @@ $(function(){
 
 
 // Router; Which page are we on???
+
+
+
+
+
+
 /*switch(window.location.pathname){
 case '/pages/todo.html':
   todoController.init();
   break;
+
+
+
+
 case '/pages/bb_todo.html':
   new bbTodoController();
   break;
@@ -44,7 +58,7 @@ case '/pages/resume.html':
   break;
 
 }
-*/
+
 
 
 
@@ -56,4 +70,4 @@ case '/pages/resume.html':
 
 
 // todo.init(); ??
-});
+});*/

@@ -1,20 +1,23 @@
 {{!< default}}
 <div id="root">
+  <!-- scrollTo header -->
+  <a id="header"></a>
+
   <div class="navbar">
     <ul>
       <li>
         <button class="top">
-          Top
+          <a href="#header">Top</a>
         </button>
       </li>
       <li>
-         <button class="middle">
-          Middle 
+        <button class="middle">
+          <a href="#summary">Summary</a>
         </button>
       </li>
       <li>
          <button class="bottom">
-          Bottom
+          <a href="#bottom">Bottom</a>
         </button>
       </li>
     </ul>
@@ -26,21 +29,24 @@
       </div>
     </div>
   </div>
-    
- 
+
+   <!-- scrollTo summary --> 
+  <a id="summary"></a>
   <div class="container summary background">
     <div class="row">
-      <div class="col-md-8 summary-text">
+      <div class="col-md-7 summary-text">
         <h1> Pop-up slow-carb mumblecore, godard crucifix 8-bit brooklyn aesthetic yr brunch salvia etsy master cleanse before they sold out. Lyft craft beer whatever banjo. 
         Street art mumblecore hoodie bushwick pug, letterpress af tumeric squid polaroid heirloom dreamcatcher PBR&B semiotics. 90's deep v gluten-free actually seitan. Normcore everyday carry listicle, crucifix dreamcatcher mixtape church-key coloring book vegan hammock knausgaard locavore celiac. Cornhole salvia pitchfork locavore artisan, stumptown viral gochujang pabst marfa street art cred lomo ethical hell of. Artisan art party venmo brunch microdosing sustainable.
         </h1>
       </div> 
-      <div class="col-md-4 summary-image">
-        
+      <div class="col-md-5 summary-image">
+        Image next to summary text
       </div> 
     </div>
-
   </div>
+
+  <!-- scrollTo bottom --> 
+  <a id="bottom"></a>
   <div class="container header background">
     <div class="row">
       <div class="col-xs-12 banner">
@@ -48,13 +54,39 @@
       </div>
     </div>
     <div class="row boxes">
-      <div class="col-md-6 container-left">
+      <div class="col-md-6 container-left background">
         <div class="box-left">Left Box</div>
       </div>
       <div class="col-md-6 container-right">
         <div class="box-right">Right Box</div>
       </div>
     </div>
-  </div>  
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="container modal-div"> 
+<!-- modal button  -->
+    <button id="myBtn">Open Modal</button>
+  
+<!-- the modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">x</span>
+        <p> Modal Text </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
 
 
