@@ -7,13 +7,8 @@ var controller = {
   render: function(){
     this.createEventHandlers();
   },
-
-
-
-
   createEventHandlers: function(){
     $('a[href^="#"]').on('click', this.scrollToHandler);
-
   },
   scrollToHandler: function(event) {
       var target = $(this.getAttribute('href'));
@@ -52,6 +47,16 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 };
+
+var fadeOutLeft = 'animated fadeOutLeft';
+var fadeInRight = 'animated fadeInRight';
+$('.box').on('click', function(){
+  $('.box').addClass(fadeOutLeft);
+  $('.slider').addClass('slider_right');                 
+  $('.box-black').addClass(fadeInRight);
+});        
+
+
 
 module.exports = controller;
 
