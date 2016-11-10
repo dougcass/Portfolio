@@ -9,6 +9,11 @@ var controller = {
   },
   createEventHandlers: function(){
     $('a[href^="#"]').on('click', this.scrollToHandler);
+    $('.box').on('click', this.animateHandler);
+    this.seasonChangeHandler('fall');
+    this.seasonChangeHandler('winter');
+    this.seasonChangeHandler('summer');
+    this.seasonChangeHandler('spring');
   },
   scrollToHandler: function(event) {
       var target = $(this.getAttribute('href'));
@@ -19,6 +24,18 @@ var controller = {
             scrollTop: target.offset().top
         }, 1000);
       }
+  },
+  animateHandler: function(){
+    var fadeOutLeft = 'animated fadeOutLeft';
+    var fadeInRight = 'animated fadeInRight';
+    $('.box').addClass(fadeOutLeft);
+    $('.slider').addClass('slider_right');                 
+    $('.box-black').addClass(fadeInRight);
+  },
+  seasonChangeHandler: function(season) {
+    $('.season-toggle.' + season).on('click', function(){
+      $('.background-season').attr( "class", "background-season " + season + "-image");
+    });
   }  
 };
 
@@ -48,13 +65,13 @@ window.onclick = function(event) {
     }
 };
 
-var fadeOutLeft = 'animated fadeOutLeft';
-var fadeInRight = 'animated fadeInRight';
-$('.box').on('click', function(){
-  $('.box').addClass(fadeOutLeft);
-  $('.slider').addClass('slider_right');                 
-  $('.box-black').addClass(fadeInRight);
-});        
+// var fadeOutLeft = 'animated fadeOutLeft';
+// var fadeInRight = 'animated fadeInRight';
+// $('.box').on('click', function(){
+//   $('.box').addClass(fadeOutLeft);
+//   $('.slider').addClass('slider_right');                 
+//   $('.box-black').addClass(fadeInRight);
+// });        
 
 
 
