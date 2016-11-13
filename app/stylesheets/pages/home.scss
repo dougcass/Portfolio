@@ -27,10 +27,174 @@
   text-decoration: none;
 }
 
+.season-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 800px;
+}
+
+.background-season {
+  background-size: cover;
+  /*background-position-y: -100px;*/
+  /*width: 100%;*/
+  /*height: 800px;*/
+  background-image: url("http://eskipaper.com/images/space-screensavers-4.jpg");
+  -webkit-transition: background-image 2s linear;
+  font-family: 'Bungee Hairline', cursive;
+  color: white;
+  text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
+}
+.season-text-box {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: left;
+  top:300px;
+  /*left:100px;*/
+  width: 100%;
+  height: 200px;
+  border: 2px solid white;
+  /*margin: 20px;*/
+   
+  
+  font-size: calc(3vw + 2px);
+}
+.flex-box-season{
+  display: inline-flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.season-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 40px;
+  box-shadow: inset 0 0 25px #fff,      
+              0 0 25px #fff,;
+ /* width: 75px;
+  height: 75px;*/
+  width: calc(5vw + 5px);
+  height: calc(5vw + 5px);
+  /*height: 2vw;*/
+  cursor: pointer;
+}
+
+ /*SEASONS*/
+.spring-image {
+  background-image: url("http://www.artsfon.com/pic/201511/1920x1200/artsfon.com-75841.jpg");
+  position: absolute;
+  left: 0px;
+  top: 0px;;
+  width: 100%;
+  height: 800px;
+  -webkit-transition: background-image 2s linear;
+  color: white;
+}
+
+.winter-image {
+  background-image: url("https://knittingkonrad.files.wordpress.com/2015/07/2015_01_white-winter-snow-2.jpg");
+  position: absolute;
+  left: 0px;
+  top: 0px;;
+  width: 100%;
+  height: 800px;
+  -webkit-transition: background-image 2s linear;
+  color: black;
+  text-shadow: 0 0 0 rgba(17,15,15,1) , 0 0 0 rgba(22,20,20,1) , 0 0 1px rgba(22,20,20,1) , 0 0 5px #0f0f0d , 0 -1px 25px #0f0e0f , 0 0 13px #0f0e0f , 0 0 0 rgba(11,12,12,1) ;
+}
+
+.fall-image {
+  background-image: url("http://cdn.paper4pc.com/images/fall-in-the-forest-wallpaper-4.jpg");
+  position: absolute;
+  left: 0px;
+  top: 0px;;
+  width: 100%;
+  height: 800px;
+  -webkit-transition: background-image 2s linear;
+  color: white;
+  
+}
+
+.summer-image {
+  background-image: url("http://www.mrwallpaper.com/wallpapers/beach-summer-palms-1920x1200.jpg");
+  position: absolute;
+  left: 0px;
+  top: 0px;;
+  width: 100%;
+  height: 800px;
+  -webkit-transition: background-image 2s linear;
+  color: white;
+}
+ /*ICONS*/
+.spring-icon {
+  color: green;
+  text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
+}
+.winter-icon {
+  color: grey;
+  text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
+}
+.fall-icon {
+  color: red;
+  text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
+}
+.summer-icon {
+  color: orange;
+  text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
+}
+
+/*SUMMARY DIV*/
+.container-summary {
+  position: relative;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/8f/8a/f9/8f8af9b2a2c6f879579a460c2a26eea9.jpg");
+  background-size: auto;
+
+  height: 600px;
+}
+.summary-flex {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 10vw;
+    display: flex;
+    border: 3px solid red;
+    height: 30vw;
+    width: 100%;
+    align-items: center;
+}
+
+.summary-text {
+    display: flex;
+    border: 2px solid black;
+    height: 20vw;
+    width: 40vw;
+    align-items: center;
+    justify-content: center;
+}  
+p {
+  font-size: 1vw;   
+}    
+
+.summary-image {
+   border: 2px solid black;
+   height: 20vw;
+   width: 40vw;
+  
+}
+
+
+
+
+
+
 
 
 .header.background {
-  position: relative;
   background-size: 100% 100%;
   width: 100%;
   height: 1000px;
@@ -74,26 +238,13 @@
   width: 100px;
   background-color: orange;
 }
-.container.summary {
-
-  width: auto;
-  height: 700px;
-}
-
-.summary.background {
-background-image: url(https://s-media-cache-ak0.pinimg.com/originals/8f/8a/f9/8f8af9b2a2c6f879579a460c2a26eea9.jpg);
-background-size: 100%;
-background-position: bottom;
 
 
-/*background-position: center;*/
-
-}
-.summary img {
-position: relative;
 
 
-}
+
+
+
 
 /*MODAL DIV*/
 /* modal background*/
@@ -103,15 +254,15 @@ position: relative;
 }
 .modal {
   display: none; /* Default hidden */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -139,6 +290,7 @@ position: relative;
 }
 
 /*ANIMATION DIV*/
+
 .animate-background {
   background-image: url("https://images.unsplash.com/photo-1477610459453-1a20bea25b68?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=9632bbff70c7be3f5f82f6a9921f634b");
   background-size: cover;
@@ -231,120 +383,6 @@ position: relative;
   font-size: 120px;    
 }
 
-/*SEASON DIV*/
 
-.season-container {
-  position: relative;
-  width: 100%;
-  height: 400px;
-}
 
-.background-season {
-  position: absolute;
-  background-position-y: -200px;
-  width: 100%;
-  height: 600px;
-  background-image: url("http://www.crestock.com/uploads/blog/wallpapers/set1/crestock-168518-1920x1200.jpg");
-  -webkit-transition: background-image 2s linear;
-  font-family: 'Bungee Hairline', cursive;
-  color: white;
-  text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
-}
-.season-text-box {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top:300px;
-  left:100px;
-  width: 30vw;
-  height: 200px;
-   
-  
-  font-size: 40px;
-}
-.flex-box-season{
-  display: inline-flex;
-  justify-content: center;
-  width: 100vw;
-}
-
-.season-toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 40px;
-  box-shadow: inset 0 0 25px #fff,      
-              0 0 25px #fff,;
-  width: 75px;
-  height: 75px;
-  cursor: pointer;
-}
-
- /*SEASONS*/
-.spring-image {
-  background-image: url("http://www.artsfon.com/pic/201511/1920x1200/artsfon.com-75841.jpg");
-  position: absolute;
-  left: 0px;
-  top: 0px;;
-  width: 100%;
-  height: 800px;
-  -webkit-transition: background-image 2s linear;
-  color: white;
-}
-
-.winter-image {
-  background-image: url("https://knittingkonrad.files.wordpress.com/2015/07/2015_01_white-winter-snow-2.jpg");
-  position: absolute;
-  left: 0px;
-  top: 0px;;
-  width: 100%;
-  height: 800px;
-  -webkit-transition: background-image 2s linear;
-  color: black;
-  text-shadow: 0 0 0 rgba(17,15,15,1) , 0 0 0 rgba(22,20,20,1) , 0 0 1px rgba(22,20,20,1) , 0 0 5px #0f0f0d , 0 -1px 25px #0f0e0f , 0 0 13px #0f0e0f , 0 0 0 rgba(11,12,12,1) ;
-}
-
-.fall-image {
-  background-image: url("http://cdn.paper4pc.com/images/fall-in-the-forest-wallpaper-4.jpg");
-  position: absolute;
-  left: 0px;
-  top: 0px;;
-  width: 100%;
-  height: 800px;
-  -webkit-transition: background-image 2s linear;
-  color: white;
-  
-}
-
-.summer-image {
-  background-image: url("http://www.mrwallpaper.com/wallpapers/beach-summer-palms-1920x1200.jpg");
-  position: absolute;
-  left: 0px;
-  top: 0px;;
-  width: 100%;
-  height: 800px;
-  -webkit-transition: background-image 2s linear;
-  color: white;
-}
- /*ICONS*/
-.spring-icon {
-  color: green;
-  text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
-}
-.winter-icon {
-  color: grey;
-  text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
-}
-.fall-icon {
-  color: red;
-  text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
-}
-.summer-icon {
-  color: orange;
-  text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
-}
 
