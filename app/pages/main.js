@@ -10,11 +10,22 @@ var controller = {
   createEventHandlers: function(){
     $('a[href^="#"]').on('click', this.scrollToHandler);
     $('.box').on('click', this.animateHandler);
+    $(window).scroll(this.fadeInHandler);
     this.seasonChangeHandler('fall');
     this.seasonChangeHandler('winter');
     this.seasonChangeHandler('summer');
     this.seasonChangeHandler('spring');
   },
+  fadeInHandler: function(){
+    $('.hideme').each(function(){
+      var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+        if( bottom_of_window > bottom_of_object ){ 
+          $(this).animate({'opacity':'1'},500);       
+        }
+     });       
+  }, 
+    
   scrollToHandler: function(event) {
       var target = $(this.getAttribute('href'));
 

@@ -9,6 +9,9 @@
   width: 300px;
   border: solid 2px white;
   // intersting fixed scroll effect */
+.hideme {
+  opacity: 0;
+}
 
 .navbar {
   position: fixed;
@@ -294,11 +297,13 @@ p {
 }    
 
 .summary-image {
-   /*border: 2px solid black;*/
+   border: 2px solid black;
    height: 20vw;
    width: 40vw;
   
 }
+
+
 
 
 
