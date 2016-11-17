@@ -41,11 +41,11 @@
 .navbar-3d-image {
   position: absolute;
   right: -31.5vw;
-  bottom: 3vw;
+  bottom: 14vw;
   /*left: -21vw;
   top: -20vw;*/
   /*// max-width: 100%;*/
-  transform: scale(2.8, 2.8) rotate(175deg);
+  transform: scale(2.8, 2.8) rotate(155deg);
   z-index: 101;
   min-width: 100%;
   /*min-height: 100%;*/
@@ -68,7 +68,7 @@
 
 .flex-box-navbar{
   position: absolute;
-  top: 20vw;
+  top: 16vw;
   right: 1.7vw;
   display: inline-flex;
   align-items: center;
@@ -76,7 +76,7 @@
   width: 15vw;
   height: 10vw;
   z-index: 120;
-  transform: rotate(15deg) rotateY(-30deg);
+  transform: rotate(0deg) rotateY(-30deg);
 }
 
 .navbar-toggle {
@@ -86,7 +86,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   margin-left: .3vw;
   margin-right: .3vw;
-  border-radius: 40px;
+  border-radius: .4vw;
   box-shadow: inset 0 0 25px #fff,      
               0 0 25px #fff,;
  /* width: 75px;
