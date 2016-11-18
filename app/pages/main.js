@@ -15,6 +15,7 @@ var controller = {
     this.seasonChangeHandler('winter');
     this.seasonChangeHandler('summer');
     this.seasonChangeHandler('spring');
+    $('.spinner-3d').on('click', this.spinnerAnimateHandler); 
   },
   fadeInHandler: function(){
     $('.hideme').each(function(){
@@ -47,16 +48,22 @@ var controller = {
     $('.season-toggle.' + season).on('click', function(){
       $('.background-season').attr( "class", "background-season " + season + "-image");
     });
-  }  
-};
-
-
-$('.spinner-3d').on('click', function(){ 
+  },
+  spinnerAnimateHandler: function(){ 
     $('.spinner-3d').addClass('click-spin');
     $('.spinner-div-2').addClass('click-spin-2');           
     $('.spinner-div-3').addClass('click-spin-3');                                           $('.spinner-div-4').addClass('click-spin-4');
     $('.field-box').addClass('field-fade-in');
-  });                              
+  }
+};
+
+
+// $('.spinner-3d').on('click', function(){ 
+//     $('.spinner-3d').addClass('click-spin');
+//     $('.spinner-div-2').addClass('click-spin-2');           
+//     $('.spinner-div-3').addClass('click-spin-3');                                           $('.spinner-div-4').addClass('click-spin-4');
+//     $('.field-box').addClass('field-fade-in');
+//   });                              
 
   // Get the modal
 var modal = document.getElementById('myModal');
