@@ -68,33 +68,35 @@
 
 .flex-box-navbar{
   position: absolute;
-  top: 16vw;
-  right: 1.7vw;
-  display: inline-flex;
+  top: 15.5vw;
+  right: 1.4vw;
+  display: flex;
   align-items: center;
+  justify-content: center;
   /*border: 2px solid red;*/
   width: 15vw;
   height: 10vw;
   z-index: 120;
-  transform: rotate(0deg) rotateY(-30deg);
+  transform: rotate(-5deg) rotateY(-30deg);
 }
 
 .navbar-toggle {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  margin-left: .3vw;
-  margin-right: .3vw;
+  /*justify-content: center;
+  align-items: center;*/
+  /*background-color: rgba(0, 0, 0, 0.2);*/
+  /*margin-left: .2vw;*/
+  margin-right: 1.2vw;
   border-radius: .4vw;
-  box-shadow: inset 0 0 25px #fff,      
-              0 0 25px #fff,;
+  /*box-shadow: inset 0 0 25px #fff,      
+              0 0 25px #fff,;*/
+  font-size: 1vw;            
  /* width: 75px;
   height: 75px;*/
-  width: calc(3vw + 5px);
-  height: calc(3vw + 5px);
-  /* width: 2vw;
-  height: 2vw;*/
+ /* width: calc(3vw + 5px);
+  height: calc(3vw + 5px);*/
+   width: 2vw;
+  height: 2vw;
   /*height: 2vw;*/
   cursor: pointer;
 }
@@ -110,7 +112,7 @@
   color: red;
   text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
 }
-.summer-icon {
+.orange-icon {
   color: orange;
   text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
 }    
