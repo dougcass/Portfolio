@@ -15,7 +15,10 @@ var controller = {
     this.seasonChangeHandler('winter');
     this.seasonChangeHandler('summer');
     this.seasonChangeHandler('spring');
-    $('.spinner-3d').on('click', this.spinnerAnimateHandler); 
+    $('.spinner-3d').on('click', this.spinnerAnimateHandler);
+    $('.codepen-icon').on('click', this.codepenAnimateHandler);
+    $('.github-icon').on('click', this.githubAnimateHandler);
+    $('.linkedin-icon').on('click', this.linkedinAnimateHandler); 
   },
   fadeInHandler: function(){
     $('.hideme').each(function(){
@@ -54,6 +57,21 @@ var controller = {
     $('.spinner-div-2').addClass('click-spin-2');           
     $('.spinner-div-3').addClass('click-spin-3');                                           $('.spinner-div-4').addClass('click-spin-4');
     $('.field-box').addClass('field-fade-in');
+  },
+  codepenAnimateHandler: function(){
+    // var fadeOut = 'animated fadeOut';
+    var fadeIn = 'animated fadeIn';
+    $('.codepen-box').addClass(fadeIn);
+  },
+  linkedinAnimateHandler: function(){
+    // var fadeOut = 'animated fadeOut';
+    var fadeIn = 'animated fadeIn';
+    $('.linkedin-box').addClass(fadeIn);
+  },
+  githubAnimateHandler: function(){
+    // var fadeOut = 'animated fadeOut';
+    var fadeIn = 'animated fadeIn';
+    $('.github-box').addClass(fadeIn);
   }
 };
 
