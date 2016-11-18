@@ -433,7 +433,7 @@ p {
 }
 
 .spinner-flex-box {
-  border: 2px solid white;
+  /*border: 2px solid white;*/
   position: absolute;
   top: 5vw;
   width: 100%;
@@ -444,7 +444,7 @@ p {
   position: absolute;
   height: 30vw;
   width: 30vw;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   border-radius: 15vw;  
   top: 10vw;
   left: 2vw;
@@ -455,7 +455,7 @@ p {
   position: absolute;
   height: 10vw;
   width: 10vw;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   border-radius: 15vw;
   top: 19vw;
   left: 11vw;
@@ -466,7 +466,7 @@ p {
   position: absolute;
   height: 10vw;
   width: 10vw;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   border-radius: 15vw;
   top: 19vw;
   left: 11vw;
@@ -477,7 +477,7 @@ p {
   position: absolute;
   height: 10vw;
   width: 10vw;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   border-radius: 15vw;
   top: 19vw;
   left: 11vw;
@@ -516,69 +516,85 @@ p {
 .field-fade-in {
   animation: fadein 4s 2s forwards;
 }
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to   {opacity: 1;} 
+}
+
 .field-box {
   opacity: 0;
   position: absolute;
   top: 8vw;
   right: 18vw;
-  border: 2px solid black;
+ /* border: 2px solid black;*/
   width: 30vw;
   height: 30vw;
-  box-shadow: inset 0 0 50px #fff,      
-              0 0 50px #fff,;
-  color: #fff;
-  text-shadow: 0 0 50px #fff;
+  /*box-shadow: inset 0 0 50px #fff, 0 0 50px #fff,;*/
+  /*color: #fff;*/
+  /*text-shadow: 0 0 50px #fff;
   font-family: 'Bungee Hairline', cursive;
+  color: red;
+  font-size: 2vw;*/
 }
   
-@keyframes fadein {
-    from {opacity: 0;}
-    to   {opacity: 1;} 
-}
+
   
 
 .field-style {
    color: white;
    border: solid 2px white;
-   background-color:rgba(19,15,15,0.1);
-   box-shadow: inset 0 0 50px #fff, 0 0 50px #fff;
+   border-radius: .5vw;
+   /*background-color: rgba(19,15,15,0.4);*/
+   background-color: rgba(255,255,255,0);
+   text-shadow: 0 0 50px #fff;
+   font-family: 'Audiowide', cursive;
+   font-size: 2vw;
+   box-shadow: inset 0 0 20px #fff, 0 0 50px #fff;
    animation: glow 5s; 
 }
 
 @keyframes glow {
   from {box-shadow: none; }
-  to { box-shadow: inset 0 0 50px #fff, 0 0 50px #fff; }
+  to { box-shadow:  0 0 50px #fff; }
+  /*inset 0 0 50px #fff,*/
 }
 
 .first-name-field {
   position: absolute;
   top: 5vw;
-  width: 20vw;
-  height: 3vw;  
+  width: 30vw;
+  height: 4vw;
+  
+
 }
 
 .last-name-field {
   position: absolute;
   top: 13vw;
-  width: 20vw;
-  height: 3vw; 
+  width: 30vw;
+  height: 4vw;   
 }
 
 .email-field {
   position: absolute;
   top: 21vw;
-  width: 20vw;
-  height: 3vw; 
+  width: 30vw;
+  height: 4vw;  
 }
 
 .submit {
   position: absolute;
-  top: 26vw;
-  left: 5vw;
-  width: 10vw;
-  height: 3vw;
+  top: 28vw;
+  left: 8vw;
+  width: 15vw;
+  height: 4vw;
 }
-
+::-webkit-input-placeholder {
+   color: grey;
+   text-shadow: 0 0 50px #fff;
+   /*text-decoration: bold;*/
+}
 
 
 

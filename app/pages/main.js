@@ -57,14 +57,6 @@ var controller = {
   }
 };
 
-
-// $('.spinner-3d').on('click', function(){ 
-//     $('.spinner-3d').addClass('click-spin');
-//     $('.spinner-div-2').addClass('click-spin-2');           
-//     $('.spinner-div-3').addClass('click-spin-3');                                           $('.spinner-div-4').addClass('click-spin-4');
-//     $('.field-box').addClass('field-fade-in');
-//   });                              
-
   // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -91,13 +83,7 @@ window.onclick = function(event) {
     }
 };
 
-// var fadeOutLeft = 'animated fadeOutLeft';
-// var fadeInRight = 'animated fadeInRight';
-// $('.box').on('click', function(){
-//   $('.box').addClass(fadeOutLeft);
-//   $('.slider').addClass('slider_right');                 
-//   $('.box-black').addClass(fadeInRight);
-// });        
+
 
 
 
