@@ -255,7 +255,7 @@
   position: absolute;
   align-items: center;
   /*top: 99vw;*/
-  top: 270vw;
+  top: 230vw;
   width: 100vw;
   height: 20vw;
  /* overflow: hidden;*/
@@ -428,36 +428,160 @@ p {
 .black-background {
   min-width: 100%;
   min-height: 100%;
+  
 
 }
-.black-flex {
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    top: 19vw;
-    display: flex;
-    /*border: 3px solid red;*/
-    height: 30vw;
-    width: 100%;
-    align-items: center;
+
+.spinner-flex-box {
+  border: 2px solid white;
+  position: absolute;
+  top: 5vw;
+  width: 100%;
+  
+  
+}
+.spinner-div-1 {
+  position: absolute;
+  height: 30vw;
+  width: 30vw;
+  border: 2px solid black;
+  border-radius: 15vw;  
+  top: 10vw;
+  left: 2vw;
+  transition: all 2s;
 }
 
-.black-text {
-    display: flex;
-    /*border: 2px solid black;*/
-    height: 25vw;
-    width: 60vw;
-    padding: 2vw;
-    border-radius: 10px;
-    /*align-items: center;*/
-    justify-content: center;
-    /*background-color: white;*/
-    background-color:rgba(19,15,15,0.3);
-    /*border: 2px solid black;*/
-    box-shadow: inset 0 0 50px #fff, 0 0 50px #fff;
-    overflow: hidden;
-
+.spinner-div-2 {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  border: 2px solid black;
+  border-radius: 15vw;
+  top: 19vw;
+  left: 11vw;
+  transition: all 3s;
 }
+
+.spinner-div-3 {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  border: 2px solid black;
+  border-radius: 15vw;
+  top: 19vw;
+  left: 11vw;
+  transition: all 5s;
+} 
+
+.spinner-div-4 {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  border: 2px solid black;
+  border-radius: 15vw;
+  top: 19vw;
+  left: 11vw;
+  transition: all 5s;
+}  
+  
+.spinner-3d {
+  max-width: 100%;
+}
+
+.click-spin { 
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes spin { 
+    from { transform: rotate(0deg); 
+         } to 
+         { transform: rotate(360deg); 
+         }
+}
+
+.click-spin-2 { 
+  transform: translate(30vw, -8vw); 
+}
+
+.click-spin-3 { 
+  transform: translate(30vw); 
+}
+
+.click-spin-4 { 
+  transform: translate(30vw, 8vw); 
+}
+
+.field-fade-in {
+  animation: fadein 4s 2s forwards;
+}
+.field-box {
+  opacity: 0;
+  position: absolute;
+  top: 8vw;
+  right: 18vw;
+  border: 2px solid black;
+  width: 30vw;
+  height: 30vw;
+  box-shadow: inset 0 0 50px #fff,      
+              0 0 50px #fff,;
+  color: #fff;
+  text-shadow: 0 0 50px #fff;
+  font-family: 'Bungee Hairline', cursive;
+}
+  
+@keyframes fadein {
+    from {opacity: 0;}
+    to   {opacity: 1;} 
+}
+  
+
+.field-style {
+   color: white;
+   border: solid 2px white;
+   background-color:rgba(19,15,15,0.1);
+   box-shadow: inset 0 0 50px #fff, 0 0 50px #fff;
+   animation: glow 5s; 
+}
+
+@keyframes glow {
+  from {box-shadow: none; }
+  to { box-shadow: inset 0 0 50px #fff, 0 0 50px #fff; }
+}
+
+.first-name-field {
+  position: absolute;
+  top: 5vw;
+  width: 20vw;
+  height: 3vw;  
+}
+
+.last-name-field {
+  position: absolute;
+  top: 13vw;
+  width: 20vw;
+  height: 3vw; 
+}
+
+.email-field {
+  position: absolute;
+  top: 21vw;
+  width: 20vw;
+  height: 3vw; 
+}
+
+.submit {
+  position: absolute;
+  top: 26vw;
+  left: 5vw;
+  width: 10vw;
+  height: 3vw;
+}
+
+
+
+
 .season-container {
   position: relative;
   display: flex;
