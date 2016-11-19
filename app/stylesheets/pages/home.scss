@@ -428,6 +428,14 @@ p {
   position: relative;
   height: 60vw;
 }
+.grey-scroll-point {
+  position: absolute;
+  /*width: 20px;
+  height:20px;
+  border: 2px solid red;*/
+  top: 10vw;
+  z-index: 300;
+}
 
 .grey-background {
   min-width: 100%;
@@ -744,6 +752,15 @@ a:hover {
 .container-black {
   position: relative;
   height: 65vw;
+}
+.white-scroll-point {
+  position: absolute;
+  width: 10px;
+  height:20px;
+  border: 2px solid red;
+  top: 5vw;
+  z-index: 300;
+
 }
 
 .black-background {
