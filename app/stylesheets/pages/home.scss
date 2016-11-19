@@ -660,7 +660,47 @@ p {
 .container-brown {
   position: relative;
   height: 60vw;
+
 }
+.easter-icon {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  /*border: 2px solid red;*/
+  bottom: 22vw;
+  left: 27vw;
+  height: 5vw;
+  width: 8vw;
+  cursor: pointer;
+  z-index: 104;
+
+
+}
+.easter-box {
+  position: absolute;
+  opacity: 0;
+  right: 0vw;
+  bottom: 0vw;
+  display: flex;
+  align-items: center;
+  justify-content: bottom;
+  width: 100vw;
+  height: 20vw;
+  
+  color: white;
+  font-size: 4.5vw;
+  text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
+  /*z-index: 105;*/
+  overflow: hidden;
+
+}
+.easter-image {
+  transform: scale( .5, .5);
+  z-index: 105;
+}
+/*.easter-fade {
+  opacity: 1;
+}*/
 .brown-scroll-point {
   position: absolute;
   /*width: 20px;

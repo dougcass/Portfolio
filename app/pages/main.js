@@ -22,7 +22,8 @@ var controller = {
     $('.white-1-icon').on('click', this.white1AnimateHandler);
     $('.white-2-icon').on('click', this.white2AnimateHandler);
     $('.black-1-icon').on('click', this.black1AnimateHandler);
-    $('.submit').on('click', this.submitResponseHandler); 
+    $('.submit').on('click', this.submitResponseHandler);
+    $('.easter-icon').on('click', this.easterHandler);
   },
   fadeInHandler: function(){
     $('.hideme').each(function(){
@@ -102,6 +103,11 @@ var controller = {
     $('.response-text').addClass('response-glow');
 
 
+  },
+  easterHandler: function(){
+    // var fadeOut = 'animated fadeOut';
+    var fadeIn = 'animated fadeIn';
+    $('.easter-box').addClass(fadeIn); 
   }
 };
 
