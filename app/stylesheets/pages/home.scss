@@ -306,6 +306,19 @@
   /*border: solid 2px red;*/
   z-index: 5;
   top: 5vw;
+  /*animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;*/
+  /*animation: spin 30s infinte linear;*/
+  animation: spin 40s infinite linear;
+}
+
+@keyframes spin { 
+    from { transform: rotate(0deg); 
+         } to 
+         { transform: rotate(359deg); 
+         }
 }
 .video-relative {
   position: relative;
@@ -319,7 +332,7 @@
 .video-text {
     display: flex;
     position: absolute;
-    left: 40vw;
+    left: 5vw;
     top: 15vw;
     /*background-image: url("http://www.wall321.com/thumbnails/detail/20120523/3d%20view%20abstract%20cgi%20cubes%203d%20render%203d%20abstract%203d%201920x1080%20wallpaper_www.wall321.com_61.jpg");
     opacity: .5;*/
@@ -332,6 +345,7 @@
     align-items: center;
     justify-content: center;
     font-family: 'Gruppo', cursive;
+    
 
     /*background-color: white;*/
     
@@ -353,7 +367,7 @@
 .head-text {
   /*font-family: 'Gruppo', cursive;*/
   font-family: 'Bungee Hairline', cursive;
-  font-size: 3vw;
+  font-size: 5vw;
   text-shadow: 0 0 10px rgba(255,185,15,1) , 0 0 0 rgba(255,185,15,1) , 0 0 0 rgba(255,185,15,1) , 0 0 5px #FFB90F , 0 -1px 25px #FFB90F , 0 0 13px #FFB90F , 0 0 0 rgba(255,185,15,1) ;
   color: #FFB90F;
 }  
@@ -440,7 +454,7 @@
 }  
 p {
   color: white;
-  font-size: 2vw;
+  /*font-size: 2vw;*/
   font-family: 'Poiret One', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
    
 }
@@ -503,7 +517,7 @@ p {
 }
 .grey-info {
   font-family: 'Gruppo', cursive;
-  font-size: 1.5vw;
+  /*font-size: 1.5vw;*/
 }
 .white-1-icon {
   position: absolute;
@@ -602,9 +616,10 @@ p {
   justify-content: center;
   width: 30vw;
   height: 30vw;
+  padding: 1vw;
   /*border: solid 2px white;*/
   color: white;
-  font-size: 4.5vw;
+  font-size: 1.5vw;
   text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
 }
 
@@ -615,9 +630,10 @@ p {
   justify-content: center;
   width: 30vw;
   height: 30vw;
+  padding: 1vw;
   /*border: solid 2px white;*/
   color: white;
-  font-size: 4.5vw;
+  font-size: 1.5vw;
   text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
 
 }
@@ -630,7 +646,8 @@ p {
   height: 30vw;
   /*border: solid 2px white;*/
   color: white;
-  font-size: 4.5vw;
+  font-size: 8vw;
+  
   text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
 
 }
