@@ -301,7 +301,7 @@
     display: flex;
     position: absolute;
     left: 40vw;
-    top: 19vw;
+    top: 15vw;
     /*background-image: url("http://www.wall321.com/thumbnails/detail/20120523/3d%20view%20abstract%20cgi%20cubes%203d%20render%203d%20abstract%203d%201920x1080%20wallpaper_www.wall321.com_61.jpg");
     opacity: .5;*/
     /*border: 2px solid black;*/
@@ -323,7 +323,7 @@
 
 .splody-image {
   position: absolute;
-  top: -3vw;
+  top: -8vw;
 
   max-width: 100%;
   transform: scale(.60, .60);
@@ -419,8 +419,8 @@
 p {
   color: white;
   font-size: 2vw;
-  font-family: 'Bungee Hairline', cursive ;
-  font-weight: bold;   
+  font-family: 'Poiret One', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+   
 }
 
 
@@ -471,23 +471,10 @@ p {
     overflow: hidden;
 
 }
-.white-1-icon {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: 18.5vw;
-  right: 39.5vw;
-  height: 10vw;
-  width: 10vw;
-  border: solid 2px red;
-  color: #8B4500;
-  border-radius: 6vw;
-
-
-  
+.grey-info {
+  font-size: 1.5vw;
 }
-.white-2-icon {
+.white-1-icon {
   position: absolute;
   display: flex;
   align-items: center;
@@ -496,10 +483,54 @@ p {
   left: 13.75vw;
   height: 5vw;
   width: 5vw;
-  border: solid 2px red;
+  /*border: solid 2px red;*/
   color: #8B4500;
   border-radius: 6vw;
+}
+.white-1-script {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 22vw;
+  left: 20vw;
+  height: 5vw;
+  width: 5vw;
+  border: solid 2px red;
+  color: white;
+  font-size: .5vw;
+  /*font-family: 'Poiret One', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;*/
+  /*font-family: 'Bungee Hairline', sans-serif;*/
+}
 
+.white-2-icon {
+  
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 18.5vw;
+  right: 39.5vw;
+  height: 10vw;
+  width: 10vw;
+  /*border: solid 2px red;*/
+  color: #8B4500;
+  border-radius: 6vw;
+  
+}
+
+.white-2-script {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 25vw;
+  right: 33vw;
+  height: 5vw;
+  width: 5vw;
+  border: solid 2px red;
+  color: white;
+  font-size: .5vw;
   
 }
 .black-1-icon {
@@ -511,11 +542,24 @@ p {
   right: 19.5vw;
   height: 4vw;
   width: 4vw;
-  border: solid 2px red;
-  color: #8B4500;
+  /*border: solid 2px red;*/
   border-radius: 6vw;
 }
 
+.black-1-script {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 27vw;
+  right: 13.5vw;
+  height: 5vw;
+  width: 5vw;
+  border: solid 2px red;
+  color: white;
+  font-size: .5vw;
+  
+}
 
 .white-1-box {
   opacity: 0;
@@ -529,6 +573,7 @@ p {
   font-size: 4.5vw;
   text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
 }
+
 .white-2-box {
   opacity: 0;
   display: flex;
@@ -555,9 +600,6 @@ p {
   text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
 
 }
-
-
-
 
 
 .container-brown {

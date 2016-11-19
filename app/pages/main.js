@@ -18,7 +18,10 @@ var controller = {
     $('.spinner-3d').on('click', this.spinnerAnimateHandler);
     $('.codepen-icon').on('click', this.codepenAnimateHandler);
     $('.github-icon').on('click', this.githubAnimateHandler);
-    $('.linkedin-icon').on('click', this.linkedinAnimateHandler); 
+    $('.linkedin-icon').on('click', this.linkedinAnimateHandler);
+    $('.white-1-icon').on('click', this.white1AnimateHandler);
+    $('.white-2-icon').on('click', this.white2AnimateHandler);
+    $('.black-1-icon').on('click', this.black1AnimateHandler); 
   },
   fadeInHandler: function(){
     $('.hideme').each(function(){
@@ -72,6 +75,21 @@ var controller = {
     // var fadeOut = 'animated fadeOut';
     var fadeIn = 'animated fadeIn';
     $('.github-box').addClass(fadeIn);
+  },
+  white1AnimateHandler: function(){
+    // var fadeOut = 'animated fadeOut';
+    var fadeIn = 'animated fadeIn';
+    $('.white-1-box').addClass(fadeIn);
+  },
+  white2AnimateHandler: function(){
+    // var fadeOut = 'animated fadeOut';
+    var fadeIn = 'animated fadeIn';
+    $('.white-2-box').addClass(fadeIn);
+  },
+  black1AnimateHandler: function(){
+    // var fadeOut = 'animated fadeOut';
+    var fadeIn = 'animated fadeIn';
+    $('.black-1-box').addClass(fadeIn);
   }
 };
 
