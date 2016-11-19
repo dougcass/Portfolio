@@ -99,7 +99,7 @@ var controller = {
     var greeting= "Thank you for visiting ";
     var response= greeting + firstName + ' ' + lastName;
     $('.field-relative').html('<h1 class="response-text">' + response + '</h1>');
-
+    $('.response-text').addClass('response-glow');
 
 
   }
