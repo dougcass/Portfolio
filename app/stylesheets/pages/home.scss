@@ -332,7 +332,7 @@
 .video-text {
     display: flex;
     position: absolute;
-    left: 5vw;
+    left: 7vw;
     top: 15vw;
     /*background-image: url("http://www.wall321.com/thumbnails/detail/20120523/3d%20view%20abstract%20cgi%20cubes%203d%20render%203d%20abstract%203d%201920x1080%20wallpaper_www.wall321.com_61.jpg");
     opacity: .5;*/
@@ -446,9 +446,11 @@
     /*align-items: center;*/
     justify-content: center;
     /*background-color: white;*/
-    background-color:rgba(19,15,15,0.3);
+    background-color:rgba(19,15,15,0.5);
     /*border: 2px solid black;*/
-    box-shadow: inset 0 0 50px #fff, 0 0 50px #fff;
+    /*box-shadow: inset 0 0 50px #fff, 0 0 50px #fff;*/
+    text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
+    font-family: 'Gruppo', cursive;
     overflow: hidden;
 
 }  
@@ -458,7 +460,9 @@ p {
   font-family: 'Poiret One', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
    
 }
-
+.summary-ipsum {
+  font-size: 2vw;
+}
 
 .container-grey {
   position: relative;
@@ -647,7 +651,7 @@ p {
   /*border: solid 2px white;*/
   color: white;
   font-size: 8vw;
-  
+
   text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
 
 }
@@ -938,7 +942,9 @@ a:hover {
    /*background-color: rgba(19,15,15,0.4);*/
    /*background-color: rgba(255,255,255,0);*/
    text-shadow: 0 0 50px #fff;
-   font-family: 'Audiowide', cursive;
+   font-family: 'Gruppo', cursive;
+
+   font-weight: bold;
    font-size: 2vw;
    box-shadow: inset 0 0 20px #fff, 0 0 50px #fff;
    animation: glow 5s;
