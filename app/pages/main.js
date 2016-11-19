@@ -94,8 +94,10 @@ var controller = {
   },
   submitResponseHandler: function(){
     var firstName= $('.first-name-field').val();
+    var lastName= $('.last-name-field').val();
+   
     var greeting= "Thank you for visiting ";
-    var response= greeting + firstName;
+    var response= greeting + firstName + ' ' + lastName;
     $('.field-relative').html('<h1 class="response-text">' + response + '</h1>');
 
 
