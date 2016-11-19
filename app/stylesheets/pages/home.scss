@@ -131,24 +131,26 @@
 }
 .white-icon {
   color: #292421;
-
-  /*font-size: 2.1vw;*/
+  cursor: pointer;
   text-shadow: 0 0 10px rgba(41,36,33,1) , 0 0 0 rgba(41,36,33,1) , 0 0 0 rgba(41,36,33,1) , 0 0 5px #292421 , 0 -1px 25px #292421 , 0 0 13px #292421 , 0 0 0 rgba(41,36,33,1) ;
 }
+
 .grey-icon {
   color: #5B5B5B;
+  cursor: pointer;
   /*font-size: 2.1vw;*/
   text-shadow: 0 0 10px rgba(91,91,91,1) , 0 0 0 rgba(91,91,91,1) , 0 0 0 rgba(91,91,91,1) , 0 0 5px #5B5B5B , 0 -1px 25px #5B5B5B , 0 0 13px #5B5B5B , 0 0 0 rgba(91,91,91,1) ;
 }
 .brown-icon {
   color: #FFB90F;
-
+  cursor: pointer;
   /*font-size: 2.1vw;*/
   text-shadow: 0 0 10px rgba(255,185,15,1) , 0 0 0 rgba(255,185,15,1) , 0 0 0 rgba(255,185,15,1) , 0 0 5px #FFB90F , 0 -1px 25px #FFB90F , 0 0 13px #FFB90F , 0 0 0 rgba(255,185,15,1) ;
 }
 
 .orange-icon {
   color: #FF3030;
+  cursor: pointer;
   /*font-size: 2.1vw;*/
   text-shadow: 0 0 10px rgba(25,48,48,1) , 0 0 0 rgba(25,48,48,1) , 0 0 0 rgba(25,48,48,1) , 0 0 5px #FF3030 , 0 -1px 25px #FF3030 , 0 0 13px #FF3030 , 0 0 0 rgba(25,48,48,1) ;
 }    
@@ -515,6 +517,7 @@ p {
   /*border: solid 2px red;*/
   color: #8B4500;
   border-radius: 6vw;
+  cursor: pointer;
 }
 .white-1-script {
   position: absolute;
@@ -542,6 +545,7 @@ p {
   right: 39.5vw;
   height: 10vw;
   width: 10vw;
+  cursor: pointer;
   /*border: solid 2px red;*/
   color: #8B4500;
   border-radius: 6vw;
@@ -571,6 +575,7 @@ p {
   right: 19.5vw;
   height: 4vw;
   width: 4vw;
+  cursor: pointer;
   /*border: solid 2px red;*/
   border-radius: 6vw;
 }
@@ -660,6 +665,8 @@ p {
   left: 44.5vw;
   height: 5vw;
   width: 8vw;
+  cursor: pointer;
+
   /*border: solid 2px white;*/
   color: #8B4500;
 
@@ -675,6 +682,8 @@ p {
   left: 27.5vw;
   height: 5vw;
   width: 8vw;
+  cursor: pointer;
+
   /*border: solid 2px white;*/
   color: #8B4500;
 
@@ -689,6 +698,8 @@ p {
   right: 29vw;
   height: 5vw;
   width: 8vw;
+  cursor: pointer;
+
   /*border: solid 2px white;*/
   color: #8B4500;
   z-index: 150;  
@@ -808,6 +819,8 @@ a:hover {
   top: 10vw;
   left: 2vw;
   transition: all 2s;
+  cursor: pointer;
+
 }
 
 .spinner-div-2 {
@@ -948,10 +961,13 @@ a:hover {
   left: 8vw;
   width: 15vw;
   height: 4vw;
+  cursor: pointer;
 }
+
 ::-webkit-input-placeholder {
    color: grey;
    text-shadow: 0 0 50px #fff;
+
    /*text-decoration: bold;*/
 }
 
@@ -1075,18 +1091,23 @@ a:hover {
 }
  /*ICONS*/
 .spring-icon {
+  cursor: pointer;
+
   color: green;
   text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
 }
 .winter-icon {
+  cursor: pointer;
   color: grey;
   text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
 }
 .fall-icon {
+  cursor: pointer;
   color: red;
   text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
 }
 .summer-icon {
+  cursor: pointer;
   color: orange;
   text-shadow: 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 0 rgba(255,255,255,1) , 0 0 5px #fcfcf4 , 0 -1px 25px #f7eff6 , 0 0 13px #f4ebf3 , 0 0 0 rgba(0,203,255,1) ;
 }    
