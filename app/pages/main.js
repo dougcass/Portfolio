@@ -21,7 +21,8 @@ var controller = {
     $('.linkedin-icon').on('click', this.linkedinAnimateHandler);
     $('.white-1-icon').on('click', this.white1AnimateHandler);
     $('.white-2-icon').on('click', this.white2AnimateHandler);
-    $('.black-1-icon').on('click', this.black1AnimateHandler); 
+    $('.black-1-icon').on('click', this.black1AnimateHandler);
+    $('.submit').on('click', this.submitResponseHandler); 
   },
   fadeInHandler: function(){
     $('.hideme').each(function(){
@@ -90,6 +91,15 @@ var controller = {
     // var fadeOut = 'animated fadeOut';
     var fadeIn = 'animated fadeIn';
     $('.black-1-box').addClass(fadeIn);
+  },
+  submitResponseHandler: function(){
+    var firstName= $('.first-name-field').val();
+    var greeting= "Thank you for visiting ";
+    var response= greeting + firstName;
+    $('.field-relative').html('<h1 class="response-text">' + response + '</h1>');
+
+
+
   }
 };
 

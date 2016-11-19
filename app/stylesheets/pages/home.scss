@@ -909,6 +909,20 @@ p {
    /*text-decoration: bold;*/
 }
 
+.response-text {
+  display: flex;
+  align-self: center;
+  position: absolute;
+  top: 6vw;
+  left: 3vw;
+  font-size: 4vw;
+  text-shadow: 0 0 10px rgba(255,185,15,1) , 0 0 0 rgba(255,185,15,1) , 0 0 0 rgba(255,185,15,1) , 0 0 5px #FFB90F , 0 -1px 25px #FFB90F , 0 0 13px #FFB90F , 0 0 0 rgba(255,185,15,1) ;
+  color: #FFB90F;
+  font-family: 'Bungee Hairline', cursive;
+
+
+}
+
 
 
 .season-container {
