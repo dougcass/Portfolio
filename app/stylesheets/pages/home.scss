@@ -53,14 +53,14 @@
 }
 
 .navbar-backer {
-  position: absolute;
-  /*border: 2px solid red;*/
+ /* position: absolute;
+  
   right: 4.1vw;
   bottom: 16.1vw;
   height: 12vw;
   width: 5vw;
   background-color:rgba(19,15,15,0.2);
-  border-radius: 2vw;
+  border-radius: 2vw;*/
 
 }
   
@@ -721,7 +721,8 @@ a {
   color: white;
 }
 a:hover {
-  color: #8B4500;
+  /*color: #8B4500;*/
+  color: white;
 }
 .github-box {
   opacity: 0;
